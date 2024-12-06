@@ -179,3 +179,141 @@ footer{
     margin-left: 46px;
     align-items: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.top {
+    background: rgba(0, 0, 0, 0.2) url("assets/Title-Image.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media (max-width: 1024px) {
+    .top {
+        background-size: contain;
+        background-position: center top;
+    }
+    .logo {
+        width: 20%;
+    }
+    .title .name {
+        font-size: 70px;
+    }
+    .play-btn, .info-btn {
+        padding: 4px 10px;
+    }
+    .show {
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .images img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top {
+        background-size: cover;
+        background-position: top center;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+    .logo {
+        width: 25%;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .title .name {
+        font-size: 50px;
+    }
+    .title {
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+    .name-buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .play-btn, .info-btn {
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+    .menu {
+        margin: 10px;
+    }
+    .menu li {
+        margin: 10px;
+    }
+    .show {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .images img {
+        width: 140px;
+        margin: 10px;
+    }
+    .socials img {
+        width: 25px;
+    }
+    .bottom, .artists {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .top {
+        background-size: cover;
+        background-position: top;
+        height: auto;
+    }
+    .logo {
+        width: 35%;
+    }
+    .title .name {
+        font-size: 35px;
+    }
+    .play-btn, .info-btn {
+        padding: 2px 6px;
+        font-size: 10px;
+    }
+    .name-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .images img {
+        width: 100px;
+    }
+    .artists {
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight, .copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+}
